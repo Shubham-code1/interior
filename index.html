@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Interior Design Page</title>
+</head>
+<body>
+        <div class="banner">
+            <div class="navbar">
+                <ul><li>  <a src="#" class="logo">! Interior</a></li></ul>
+                <h6 id="time">Time:</h6>
+              
+                <ul>
+                    <li id="home"><a href="#">Home</a></li>
+                    <li class="a"><a href="#">Bedroom</a></li>
+                    <li class="a"><a href="#">Kitchen</a></li>
+                    <li class="a"><a href="#">Backyard</a></li>
+                    <li class="a"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1 id="effect">Make room for your better living</h1>
+                <p>Stunning interior design services, now within reach</p>
+                <button class="btn"><span></span>Find Your Styles</button>
+                <button class="btn"><span></span>Contact Designer</button>
+            </div>
+        </div>
+</div>
+
+<script>
+    let time = document.getElementById('time');
+
+function getTimeDisplay(){
+    setInterval(()=>{
+        let date = new Date();
+        time.innerHTML = date.toLocaleTimeString();
+    })
+}
+
+getTimeDisplay();
+</script>
+        
+          
+   
+</body>
+</html>
